@@ -1,6 +1,7 @@
 // WordCount.cpp
 
 #include "WordCount.h"
+#include <cctype>
 
 using namespace std;
 void merge(vector<std::pair<std::string, int>>& arr, int left, 
