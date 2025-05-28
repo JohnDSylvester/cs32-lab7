@@ -4,7 +4,7 @@
 #include <cctype>
 
 using namespace std;
-void merge(vector<std::pair<std::string, int>>& arr, int left, 
+static void merge(vector<std::pair<std::string, int>>& arr, int left, 
                      int mid, int right, bool byCount)
 {
     int n1 = mid - left + 1;
@@ -74,7 +74,7 @@ void merge(vector<std::pair<std::string, int>>& arr, int left,
 
 // begin is for left index and end is right index
 // of the sub-array of arr to be sorted
-void mergeSort(vector<std::pair<std::string, int>>& arr, int left, int right, bool byCount)
+static void mergeSort(vector<std::pair<std::string, int>>& arr, int left, int right, bool byCount)
 {
     if (left >= right)
         return;
